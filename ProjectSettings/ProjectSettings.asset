@@ -628,7 +628,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_EDITOR_ONLY
+    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_EDITOR_ONLY;FISHNET
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
