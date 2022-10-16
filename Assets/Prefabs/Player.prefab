@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5225583365207142003}
-  - component: {fileID: 5225583365207142013}
+  - component: {fileID: 5685382934582314859}
   - component: {fileID: 5225583365207142002}
   - component: {fileID: -114611144670663311}
   - component: {fileID: 2017894309174383309}
@@ -121,7 +121,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5225583365207142013
+--- !u!114 &5685382934582314859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,11 +144,10 @@ MonoBehaviour:
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
   <PrefabId>k__BackingField: 2
-  _scenePathHash: 774665742
+  _scenePathHash: 0
   <SceneId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 7807759643866311769
-  _sceneNetworkObjects:
-  - {fileID: 5225583365207142013}
+  _sceneNetworkObjects: []
 --- !u!114 &5225583365207142002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,8 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 5225583365207142013}
-  _networkObjectCache: {fileID: 5225583365207142013}
+  _addedNetworkObject: {fileID: 5685382934582314859}
+  _networkObjectCache: {fileID: 5685382934582314859}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -230,7 +229,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -250,4 +249,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e017009e164f6783d036b6be1b4dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 20

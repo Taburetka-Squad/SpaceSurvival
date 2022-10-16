@@ -27,6 +27,6 @@ public class Player : MonoBehaviour
         var vertical = Input.GetAxis("Vertical");
         var direction = new Vector2(horizontal, vertical);
 
-        _rigidbody.velocity = direction * _speed;
+        _rigidbody.AddForce(direction * _speed, ForceMode2D.Force);
     }
 }
