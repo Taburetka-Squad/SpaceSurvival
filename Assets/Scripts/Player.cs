@@ -1,21 +1,24 @@
 using UnityEngine;
 
+using FishNet.Object;
+
 [RequireComponent(typeof(Collider2D), typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed;
     
     private Rigidbody2D _rigidbody;
-    private Collider2D _collider;
+    private NetworkObject _networkObject;
 
     private void Awake()
     {
-        _collider = GetComponent<Collider2D>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _networkObject = GetComponent<NetworkObject>();
     }
     private void Update()
     {
-        Move();
+        if (_networkObject.IsOwner)
+            Move();
     }
 
     private void Move()
@@ -23,7 +26,7 @@ public class Player : MonoBehaviour
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
         var direction = new Vector2(horizontal, vertical);
-        
-        _rigidbody.AddForce(direction * _speed, ForceMode2D.Force);
+
+        _rigidbody.velocity = direction * _speed;
     }
 }
