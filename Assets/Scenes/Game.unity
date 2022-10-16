@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9f6ec51ddc14f908f5acc0cd0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 5685382934582314859, guid: c74f70022f9c2114d8b96d41ee6280c5, type: 3}
+  _playerPrefab: {fileID: 5484238202327982807, guid: c74f70022f9c2114d8b96d41ee6280c5, type: 3}
   _addToDefaultScene: 1
   Spawns:
   - {fileID: 2060888207}
@@ -691,11 +691,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _allowTickDropping: 0
   _maximumFrameTicks: 3
-  _tickRate: 30
+  _tickRate: 60
   _pingInterval: 1
-  _timingInterval: 2
-  _physicsMode: 0
-  _maximumBufferedInputs: 15
+  _timingInterval: 1
+  _physicsMode: 1
+  _maximumBufferedInputs: 60
 --- !u!114 &1268962905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 2060888313}
   - component: {fileID: 2060888213}
   - component: {fileID: 2060888208}
-  - component: {fileID: 2060888314}
+  - component: {fileID: 2060888316}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -1116,6 +1116,7 @@ MonoBehaviour:
   <ComponentIndex>k__BackingField: 0
   _networkBehaviours:
   - {fileID: 0}
+  - {fileID: 2060888316}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   _isNetworked: 1
@@ -1128,7 +1129,7 @@ MonoBehaviour:
   <AssetPathHash>k__BackingField: 0
   _sceneNetworkObjects:
   - {fileID: 2060888313}
---- !u!114 &2060888314
+--- !u!114 &2060888316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1140,9 +1141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402926ef33e0a894d9fec352693988ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 2060888313}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 2060888313}
   _graphicalObject: {fileID: 2060888204}
   _smoothTicks: 1
   _durationType: 0

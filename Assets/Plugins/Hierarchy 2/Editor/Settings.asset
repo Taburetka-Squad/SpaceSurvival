@@ -58,7 +58,7 @@ MonoBehaviour:
   displayGrid: 1
   displayStaticButton: 1
   offSetIconAfterName: 8
-  displayComponents: 1
+  displayComponents: 0
   componentAlignment: 1
   componentDisplayMode: 3
   components:
